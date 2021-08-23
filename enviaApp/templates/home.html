@@ -5,42 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Envia E-mail</title>
-    <style>
-        .cor{
-            background:darkgrey;
-        }
-        .form{
-            
-            background: cornflowerblue;
-            text-align: center;
-            width:250px;
-            height:200px;
-            margin: 0 auto;
-            margin-top:10px;
-            padding-top: 2%;
-            border-radius: 50px;
-        }
-        .radius{
-            border-radius: 10px;
-        }
-        
-    </style>
+    
 </head>
 <body class="cor">
-    <h1 style="text-align: center; font-size: 40px; margin-top:30%;">Envia e-mail</h1>
-    <div class="form">
+    <h1>Envia e-mail</h1>
+
     <form class="form2" action="" method="POST">
-        <br>
-        <br>
-        <br>
+       
         {% csrf_token %}
         <input type="text" name="nome123" type="submit" placeholder="primeiro nome">
-        <input type="text" name="mail" placeholder="demo@exemple.com">
         <br>
+        <input type="text" name="mail" placeholder="demo@exemple.com">
         <br>
         <input  class="radius" type="submit" style="font-size: 26px" value="Enviar">
         
     </form>
-  </div>  
+
 </body>
 </html>
